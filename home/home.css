@@ -1,0 +1,54 @@
+.carousel {
+    height: 350px !important;
+    overflow: hidden !important;
+    background: rgb(0, 0, 0);
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+}
+.carousel img  {
+    height: 100%;
+    width: auto !important;
+}
+.imagem {
+    position: relative;
+    width: 50% !important;
+    overflow: hidden;
+}
+.carousel-item span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background: linear-gradient(to left, rgba(0, 0, 0,1) 0%,
+                                         rgba(0, 0, 0,0) 100%);
+    width: 35%;
+    height: 100%;
+}
+.carousel-caption {
+    position: absolute !important;
+    right: 0 !important;
+    left: unset !important;
+    top: 0 !important;
+    text-align: left !important;
+    width: 50% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding-left: 1%;
+}
+.prod-iten {
+    margin: 15px 3px 15px 3px !important;
+}
+.user-infos {
+    right: 10px !important;
+    position: absolute;
+}
+.user-infos div {
+    margin-right: 10px;
+}
+.no-ftrd {
+    position: absolute !important;
+    top: 50% !important;
+    left: 0 !important;
+
+    transform: translateY(-50%) !important;
+}
