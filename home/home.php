@@ -2,7 +2,7 @@
 include_once('../conexao.php');
 session_start();
 
-if(empty($_SESSION['nome'])) {
+if (empty($_SESSION['nome'])) {
     header('Location: ../index.php');
 }
 
@@ -178,4 +178,9 @@ for ($i = 0; count($cartQtd) > $i; $i++) {
 
     <script src="../bootstrap/js/bootstrap.js"></script>
     <script src="homeScripts.js" type="text/javascript"></script>
+    <script id="__bs_script__">
+        //<![CDATA[
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.5'><\/script>".replace("HOST", location.hostname));
+        //]]>
+    </script>
 </body>

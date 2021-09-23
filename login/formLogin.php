@@ -1,3 +1,8 @@
+<?php
+require_once '../vendor/autoload.php';
+
+use SebastianBergmann\Timer\Timer;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -107,6 +112,14 @@
             </div>
         </div>
     </div>
+    <footer class="text-white timer">
+        <?php
+        $timer = new Timer;
+        $timer->start();
+        $duration = $timer->stop();
+        echo "Tempo de loading: " . $duration->asMilliseconds() . "ms";
+        ?>
+    </footer>
     <script src="loginScripts.js" type="text/javascript"></script>
     <script src="../bootstrap/js/bootstrap.js" type="text/javascript"></script>
 </body>

@@ -31,7 +31,7 @@ $idNum = mysqli_fetch_row($idQuery);
 
 
 if ($email == "soyadmin@ademar.adm" && $senha == '399be72dcee0070ca04fab82f550ccc7') {
-    $_SESSION['nome'] = "Ademiro";
+    $_SESSION['adm'] = "Ademiro";
 
     header('Location: ../PainelAdm/PainelAdm.php?msg=admOn');
     exit();

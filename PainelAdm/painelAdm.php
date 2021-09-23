@@ -1,7 +1,7 @@
 <?php
 include('../conexao.php');
 session_start();
-if(empty($_SESSION['nome'])) {
+if(empty($_SESSION['adm'])) {
     header('Location: ../index.php');
 }
 if ($_GET['msg'] == "true") {
@@ -24,7 +24,7 @@ if ($_GET['msg'] == "true") {
                 Ademir
             </strong>
             <?php
-            echo $_SESSION['nome'];
+            echo $_SESSION['adm'];
             ?>
         </div>
     </div>
